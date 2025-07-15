@@ -1,4 +1,3 @@
-//testing
 project_id    = "madhur-dev-sandbox"
 gcp_sa_key    = "E:/LearnGCP/sa-key.json"
 //project_id    = "terraform-gcp-composer"
