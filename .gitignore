@@ -1,0 +1,28 @@
+# Local .terraform directories
+.terraform/
+
+# .tfstate files
+*.tfstate
+*.tfstate.backup
+
+# Crash log files
+crash.log
+
+# Ignore override files as they are not typically versioned
+override.tf
+override.tf.json
+
+# Ignore plan output
+*.plan
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Provider binaries (Windows/Linux/Mac)
+terraform-provider-*
+LICENSE.txt
+modules.json
+
+# VS Code settings (optional, if you don’t want to sync these)
+.vscode/
