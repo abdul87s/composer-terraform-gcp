@@ -38,7 +38,7 @@ resource "google_monitoring_alert_policy" "uptime_alert" {
     condition_threshold {
       filter          = "metric.type=\"monitoring.googleapis.com/uptime_check/check_passed\" resource.type=\"uptime_url\""
       duration        = "60s"
-      comparison      = "COMPARISON_EQ"
+      comparison = "COMPARISON_GT"  # or "COMPARISON_LT"
       threshold_value = 0
       aggregations {
         alignment_period     = "60s"
