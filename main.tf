@@ -45,5 +45,11 @@ module "composer" {
   dag_bucket_name   = var.dag_bucket_name
   composer_sa_name  = var.composer_sa_name
 }
+module "monitoring" {
+  source             = "./modules/monitoring"
+  project_id         = var.project_id
+  webserver_url      = "composer-dot-${var.project_id}.appspot.com"
+  notification_email = "alerts@example.com"
+}
 
 
