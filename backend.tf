@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket  = "dev-terraform-state-bucket-15"
+    bucket  = "dev-terraform-state-bucket-12"
     prefix  = "composer/bootstrap"
   }
 }
