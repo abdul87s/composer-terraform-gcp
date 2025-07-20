@@ -1,3 +1,11 @@
+resource "google_storage_bucket" "my-bucket" {
+  name          = "dev-terraform-state-bucket-11"
+  location      = "us-central1"
+  project = var.project_id
+  force_destroy = true
+  public_access_prevention = "enforced"
+}
+
 resource "google_project_service" "composer" {
   project = var.project_id
   service = "composer.googleapis.com"
